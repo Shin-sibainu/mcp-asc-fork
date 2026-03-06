@@ -9,8 +9,8 @@
 </p>
 <div align="center">
 
-[![npm version](https://badgen.net/npm/v/app-store-connect-mcp)](https://www.npmjs.com/package/app-store-connect-mcp)
-[![License](https://img.shields.io/npm/l/app-store-connect-mcp)](https://github.com/beautyfree/app-store-connect-mcp-server/blob/main/LICENSE)
+[![npm version](https://badgen.net/npm/v/mcp-appstore-connect)](https://www.npmjs.com/package/mcp-appstore-connect)
+[![License](https://img.shields.io/npm/l/mcp-appstore-connect)](https://github.com/beautyfree/mcp-appstore-connect/blob/main/LICENSE)
 
 </div>
 
@@ -22,12 +22,12 @@ A [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server that co
 
 **Cursor (install link):**
 
-[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=app-store-connect&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImFwcC1zdG9yZS1jb25uZWN0LW1jcCJdLCJlbnYiOnsiQVBQX1NUT1JFX0NPTk5FQ1RfS0VZX0lEIjoiWU9VUl9LRVlfSUQiLCJBUFBfU1RPUkVfQ09OTkVDVF9JU1NVRVJfSUQiOiJZT1VSX0lTU1VFUl9JRCIsIkFQUF9TVE9SRV9DT05ORUNUX1A4X1BBVEgiOiIvcGF0aC90by95b3VyL2F1dGgta2V5LnA4IiwiQVBQX1NUT1JFX0NPTk5FQ1RfVkVORE9SX05VTUJFUiI6IllPVVJfVkVORE9SX05VTUJFUl9PUFRJT05BTCJ9fQ%3D%3D)
+[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=app-store-connect&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIm1jcC1hcHBzdG9yZS1jb25uZWN0Il0sImVudiI6eyJBUFBfU1RPUkVfQ09OTkVDVF9LRVlfSUQiOiJZT1VSX0tFWV9JRCIsIkFQUF9TVE9SRV9DT05ORUNUX0lTU1VFUl9JRCI6IllPVVJfSVNTVUVSX0lEIiwiQVBQX1NUT1JFX0NPTk5FQ1RfUDhfUEFUSCI6Ii9wYXRoL3RvL3lvdXIvYXV0aC1rZXkucDgiLCJBUFBfU1RPUkVfQ09OTkVDVF9WRU5ET1JfTlVNQkVSIjoiWU9VUl9WRU5ET1JfTlVNQkVSX09QVElPTkFMIn19)
 
 **Other clients (Claude Desktop, etc.):**
 
 ```bash
-npx add-mcp app-store-connect-mcp
+npx add-mcp mcp-appstore-connect
 ```
 
 ## Configure
@@ -50,7 +50,7 @@ Create an API key at [App Store Connect → Users and Access → Integrations �
   "mcpServers": {
     "app-store-connect": {
       "command": "npx",
-      "args": ["-y", "app-store-connect-mcp"],
+      "args": ["-y", "mcp-appstore-connect"],
       "env": {
         "APP_STORE_CONNECT_KEY_ID": "YOUR_KEY_ID",
         "APP_STORE_CONNECT_ISSUER_ID": "YOUR_ISSUER_ID",
