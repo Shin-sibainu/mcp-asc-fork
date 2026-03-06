@@ -9,25 +9,25 @@
 </p>
 <div align="center">
 
-[![npm version](https://badgen.net/npm/v/mcp-appstore-connect)](https://www.npmjs.com/package/mcp-appstore-connect)
-[![License](https://img.shields.io/npm/l/mcp-appstore-connect)](https://github.com/beautyfree/mcp-appstore-connect/blob/main/LICENSE)
+[![npm version](https://badgen.net/npm/v/mcp-asc)](https://www.npmjs.com/package/mcp-asc)
+[![License](https://img.shields.io/npm/l/mcp-asc)](https://github.com/beautyfree/appstore-connect-mcp/blob/main/LICENSE)
 
 </div>
 
 A [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server that connects [Cursor](https://cursor.com), [Claude Desktop](https://claude.ai), and other MCP clients to the official [App Store Connect API](https://developer.apple.com/documentation/appstoreconnectapi)—so you can manage iOS/macOS apps, TestFlight, in-app subscriptions, and store metadata via chat or automated tool calls instead of clicking through the App Store Connect UI.
 
-**Use it to:** list and inspect apps, builds, and beta groups · manage TestFlight testers and review submissions · create and update subscription groups and prices · edit App Store version localizations and “What’s New” · download sales and finance reports · list Xcode schemes and CI products. All with JWT auth and the same API Apple’s own tools use.
+**Use it to:** list and inspect apps, builds, and beta groups · manage TestFlight testers and review submissions · create and update subscription groups and prices · edit App Store version localizations and "What's New" · download sales and finance reports · list Xcode schemes and CI products. All with JWT auth and the same API Apple's own tools use.
 
 ## Install
 
 **Cursor (install link):**
 
-[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=app-store-connect&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIm1jcC1hcHBzdG9yZS1jb25uZWN0Il0sImVudiI6eyJBUFBfU1RPUkVfQ09OTkVDVF9LRVlfSUQiOiJZT1VSX0tFWV9JRCIsIkFQUF9TVE9SRV9DT05ORUNUX0lTU1VFUl9JRCI6IllPVVJfSVNTVUVSX0lEIiwiQVBQX1NUT1JFX0NPTk5FQ1RfUDhfUEFUSCI6Ii9wYXRoL3RvL3lvdXIvYXV0aC1rZXkucDgiLCJBUFBfU1RPUkVfQ09OTkVDVF9WRU5ET1JfTlVNQkVSIjoiWU9VUl9WRU5ET1JfTlVNQkVSX09QVElPTkFMIn19)
+[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=app-store-connect&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIm1jcC1hc2MiXSwiZW52Ijp7IkFQUF9TVE9SRV9DT05ORUNUX0tFWV9JRCI6IllPVVJfS0VZX0lEIiwiQVBQX1NUT1JFX0NPTk5FQ1RfSVNTVUVSX0lEIjoiWU9VUl9JU1NVRVJfSUQiLCJBUFBfU1RPUkVfQ09OTkVDVF9QOF9QQVRIIjoiL3BhdGgvdG8veW91ci9hdXRoLWtleS5wOCIsIkFQUF9TVE9SRV9DT05ORUNUX1ZFTkRPUl9OVU1CRVIiOiJZT1VSX1ZFTkRPUl9OVU1CRVJfT1BUSU9OQUwifX0%3D)
 
 **Other clients (Claude Desktop, etc.):**
 
 ```bash
-npx add-mcp mcp-appstore-connect
+npx add-mcp mcp-asc
 ```
 
 ## Configure
@@ -50,7 +50,7 @@ Create an API key at [App Store Connect → Users and Access → Integrations �
   "mcpServers": {
     "app-store-connect": {
       "command": "npx",
-      "args": ["-y", "mcp-appstore-connect"],
+      "args": ["-y", "mcp-asc"],
       "env": {
         "APP_STORE_CONNECT_KEY_ID": "YOUR_KEY_ID",
         "APP_STORE_CONNECT_ISSUER_ID": "YOUR_ISSUER_ID",

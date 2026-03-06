@@ -1,20 +1,27 @@
 {
-  "name": "mcp-appstore-connect",
-  "version": "2.0.0",
-  "description": "MCP server for the App Store Connect API. Manage iOS/macOS apps, TestFlight, subscriptions, and store metadata from Cursor, Claude, or any MCP client.",
+  "name": "mcp-asc",
+  "version": "2.0.3",
+  "description": "App Store Connect MCP server — manage iOS/macOS apps, TestFlight, in-app subscriptions, and App Store metadata from Cursor, Claude, or any Model Context Protocol client. Uses official App Store Connect API.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beautyfree/mcp-appstore-connect.git"
+    "url": "git+https://github.com/beautyfree/appstore-connect-mcp.git"
   },
   "keywords": [
+    "appstore",
+    "connect",
     "mcp",
+    "appstore connect",
     "app-store-connect",
+    "app store connect",
+    "model-context-protocol",
     "apple",
+    "ios",
+    "macos",
+    "testflight",
+    "in-app-purchases",
+    "subscriptions",
     "cursor",
     "claude",
-    "ios",
-    "testflight",
-    "model-context-protocol",
     "app-store",
     "api"
   ],
@@ -29,7 +36,7 @@
     "dev": "cross-env XMCP_TELEMETRY_DISABLED=true xmcp dev"
   },
   "bin": {
-    "mcp-appstore-connect": "dist/stdio.js"
+    "mcp-asc": "dist/stdio.js"
   },
   "main": "./dist/stdio.js",
   "files": [
