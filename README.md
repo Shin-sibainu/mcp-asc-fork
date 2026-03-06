@@ -1,8 +1,8 @@
 <p align="center">
-  <img width="20%" src=".github/assets/logo.webp" alt="app-store-connect-mcp" />
+  <img width="20%" src=".github/assets/logo.webp" alt="mcp-appstore-connect" />
 </p>
 <p align="center">
-  <h1 align="center">app-store-connect-mcp</h1>
+  <h1 align="center">App Store Connect MCP</h1>
 </p>
 <p align="center">
   App Store Connect in your AI agent. MCP server for the official App Store Connect API.
