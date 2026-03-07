@@ -106,6 +106,10 @@ npm run dev            # watch + run
 
 Node 20+.
 
+## Listing in MCP catalogs
+
+To add this server to the **official MCP Registry**, **Cursor MCP Directory**, **cursor.store**, and other catalogs, see [docs/REGISTRY.md](docs/REGISTRY.md).
+
 ## License
 
 MIT.

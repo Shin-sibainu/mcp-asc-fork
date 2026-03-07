@@ -1,6 +1,7 @@
 {
   "name": "mcp-asc",
-  "version": "2.0.3",
+  "version": "2.0.4",
+  "mcpName": "io.github.beautyfree/app-store-connect",
   "description": "App Store Connect MCP server — manage iOS/macOS apps, TestFlight, in-app subscriptions, and App Store metadata from Cursor, Claude, or any Model Context Protocol client. Uses official App Store Connect API.",
   "repository": {
     "type": "git",
