@@ -43,9 +43,26 @@ export const schema = {
   violenceRealistic: z
     .enum(["NONE", "INFREQUENT_OR_MILD", "FREQUENT_OR_INTENSE", "INFREQUENT", "FREQUENT"])
     .optional(),
+  violenceRealisticProlongedGraphicOrSadistic: z
+    .enum(["NONE", "INFREQUENT_OR_MILD", "FREQUENT_OR_INTENSE", "INFREQUENT", "FREQUENT"])
+    .optional(),
+  sexualContentGraphicAndNudity: z
+    .enum(["NONE", "INFREQUENT_OR_MILD", "FREQUENT_OR_INTENSE", "INFREQUENT", "FREQUENT"])
+    .optional(),
+  gunsOrOtherWeapons: z
+    .enum(["NONE", "INFREQUENT_OR_MILD", "FREQUENT_OR_INTENSE", "INFREQUENT", "FREQUENT"])
+    .optional(),
+  contests: z
+    .enum(["NONE", "INFREQUENT_OR_MILD", "FREQUENT_OR_INTENSE", "INFREQUENT", "FREQUENT"])
+    .optional(),
   advertising: z.boolean().optional(),
   unrestrictedWebAccess: z.boolean().optional(),
   userGeneratedContent: z.boolean().optional(),
+  healthOrWellnessTopics: z.boolean().optional(),
+  parentalControls: z.boolean().optional(),
+  lootBox: z.boolean().optional(),
+  messagingAndChat: z.boolean().optional(),
+  ageAssurance: z.boolean().optional(),
   developerAgeRatingInfoUrl: z.string().url().optional().nullable(),
 };
 
@@ -79,9 +96,18 @@ export default async function updateAgeRatingDeclarationTool(
     "sexualContentOrNudity",
     "violenceCartoonOrFantasy",
     "violenceRealistic",
+    "violenceRealisticProlongedGraphicOrSadistic",
+    "sexualContentGraphicAndNudity",
+    "gunsOrOtherWeapons",
+    "contests",
     "advertising",
     "unrestrictedWebAccess",
     "userGeneratedContent",
+    "healthOrWellnessTopics",
+    "parentalControls",
+    "lootBox",
+    "messagingAndChat",
+    "ageAssurance",
     "developerAgeRatingInfoUrl",
   ];
   for (const k of optionalKeys) {
