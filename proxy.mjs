@@ -102,12 +102,14 @@ function transformCallRequest(msg) {
     const types = toolTypeMap[msg.params.name] || {};
     const restored = {};
     for (const [key, value] of Object.entries(msg.params.arguments)) {
-      const origKey = safeToBracket(key);
+      // xmcp schemas use dot notation (filter.app), so pass keys as-is.
+      // Previous safeToBracket conversion (filter.app → filter[app]) broke
+      // required params and silently ignored optional filter params.
       let val = value;
       const t = types[key];
       if (t === "boolean" && typeof val === "string") val = val === "true";
       else if (t === "number" && typeof val === "string") val = Number(val);
-      restored[origKey] = val;
+      restored[key] = val;
     }
     msg.params.arguments = restored;
   }
